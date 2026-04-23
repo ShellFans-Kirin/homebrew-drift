@@ -107,12 +107,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet Formula/drift.rb; then
-            echo "No changes to Formula — skipping commit."
+          git add Formula/drift.rb
+          if git diff --cached --quiet; then
+            echo "No staged changes to Formula — skipping commit."
             exit 0
           fi
-
-          git add Formula/drift.rb
           git commit -m "drift ${{ steps.payload.outputs.version }}
 
           Formula regenerated from drift_ai release dispatch."
