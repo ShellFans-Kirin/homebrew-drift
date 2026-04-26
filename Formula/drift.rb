@@ -1,26 +1,26 @@
 class Drift < Formula
   desc "Local-first CLI that captures, compacts, and binds AI coding sessions to git"
   homepage "https://github.com/ShellFans-Kirin/drift_ai"
-  version "0.4.1"
+  version "0.4.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.1/drift-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "12e552d2528eb76274805f81d24aa7f63de995f204147929d2ff43b62fa9a357"
+      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.2/drift-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "d4989a8ba5543d7d4a2fb17f0cae895745f7848f200f3bd39261172cdca47e0c"
     else
-      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.1/drift-v0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "9560703927713bdf2f162622d6ae12b6e95b133dc32d097c2d6dbb2aab4062a7"
+      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.2/drift-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "7bd12707d9bb92b15f2a5bee0e556e898c7400f622c8741953203bf8f860ffbb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.1/drift-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e33878c9521c20c55da396a2c5d5a061d234afc8877be4454389fd08aba08f62"
+      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.2/drift-v0.4.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "71f62e56f5a09cfcdee03cda58e95db26d3648486e3446ef938f991c4250adb5"
     else
-      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.1/drift-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7e2e062ae286fd4f97c1fd081450fd8865c1160781d898f12d4d482bbf412fb2"
+      url "https://github.com/ShellFans-Kirin/drift_ai/releases/download/v0.4.2/drift-v0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7a9733340990f58e96a97c566488df5ad1cde8de282c287ef3381fe94d72f497"
     end
   end
 
